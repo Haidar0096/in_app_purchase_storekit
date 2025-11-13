@@ -131,7 +131,7 @@ extension on SK2TransactionMessage {
       productID: productId,
       // in SK2, as per Apple
       // https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl
-      // receipt isn’t necessary with SK2 as a Transaction can only be returned
+      // receipt isn't necessary with SK2 as a Transaction can only be returned
       // from validated purchases.
       verificationData: PurchaseVerificationData(
         localVerificationData: jsonRepresentation ?? '',
@@ -146,6 +146,7 @@ extension on SK2TransactionMessage {
       // Any failed transaction will simply not be returned.
       status: restoring ? PurchaseStatus.restored : PurchaseStatus.purchased,
       purchaseID: id.toString(),
+      appAccountToken: appAccountToken,
     );
   }
 }
