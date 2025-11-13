@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+*.swiftpm
+
+# IDE
+.idea/
+.vscode/
+
+# Dart/Flutter
+.dart_tool/
+.packages
+pubspec.lock
