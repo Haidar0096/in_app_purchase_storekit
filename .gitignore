@@ -14,3 +14,4 @@ xcuserdata/
 .dart_tool/
 .packages
 pubspec.lock
+.flutter-plugins*
