@@ -15,3 +15,4 @@ xcuserdata/
 .packages
 pubspec.lock
 .flutter-plugins*
+build/
